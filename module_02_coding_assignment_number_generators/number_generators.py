@@ -13,7 +13,7 @@ def linear_congruential_generator(seed, a, b, m, n):
         # Convert to binary and remove '0b' prefix
         binary_s = bin(s)[2:]
 
-        # Pad with zeros to ensure length consistency
+       # Pad with zeros to ensure length consistency
         binary_s = binary_s.zfill(31)  # m is 2^31, so 31 bits are needed
 
         # ADD to the output
