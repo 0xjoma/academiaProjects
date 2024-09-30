@@ -1,6 +1,3 @@
-import math
-
-
 def linear_congruential_generator(seed, a, b, m, n):
     # Initialize variables
     s = seed

@@ -1,4 +1,3 @@
-import math
 from StringConversion import *
 
 # This file implements a block cipher algorithm that encrypts B bits at a time
