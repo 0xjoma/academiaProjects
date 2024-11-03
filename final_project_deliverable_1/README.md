@@ -4,19 +4,24 @@ This project implements the DES (Data Encryption Standard) encryption algorithm 
 ## Project Structure
 ```
 .
-.
 ├── DES.py                  # Main DES implementation with test cases
 ├── StringConversion.py     # Utility functions for binary/string conversions
 ├── plaintext1.txt         # Sample plaintext file containing binary input
 ├── keySecret1.txt         # First sample key file (binary format)
 ├── keySecret2.txt         # Second sample key file (hex format)
 ├── resources/            # Contains academic research and documentation about DES
+├── selfAssessment/      # Contains implementation evaluation
+│   └── README_selfAssessment.md  # Detailed self-assessment against rubric
 └── results/             # Contains output files from encryption/decryption
     ├── ciphertext.txt   # Encrypted output from Test Case 1
     ├── plaintext2.txt   # Decrypted output from Test Case 1
     ├── ciphertext2.txt  # Encrypted output from Test Case 2
     └── plaintext3.txt   # Decrypted output from Test Case 2
 ```
+## Documentation
+- Main implementation documentation is in this README
+- For a detailed evaluation of the implementation against the project rubric, see selfAssessment/README_selfAssessment.md
+- Academic research and references can be found in the resources/ directory
 
 ## Prerequisites
 - Python 3.x
@@ -93,3 +98,62 @@ Results can be verified by:
 1. Running the test cases
 2. Comparing the decrypted output with the original input
 3. Checking that the decrypted hex matches the expected value (e.g., "68656c6c6f" for "hello")
+
+## Setup and Installation
+
+You can get the project files in one of two ways:
+
+### Option 1: Clone via GitHub
+```bash
+# Clone the academia projects repository
+git clone https://github.com/0xjoma/academiaProjects.git
+
+# Navigate to the DES implementation directory
+cd academiaProjects/final_project_deliverable_1
+```
+
+### Option 2: Manual Download
+1. Visit https://github.com/0xjoma/academiaProjects/tree/main/final_project_deliverable_1
+2. Download the following files:
+   - DES.py
+   - StringConversion.py
+   - plaintext1.txt
+   - keySecret1.txt
+   - keySecret2.txt
+3. Create a new directory for the project
+4. Place all downloaded files in the directory
+5. Create a 'results' subdirectory for output files
+
+### Set Up Python Environment
+Regardless of installation method, you'll need to set up a Python virtual environment:
+
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+# On Windows:
+.venv\Scripts\activate
+# On macOS/Linux:
+source .venv/bin/activate
+
+# No additional packages required for this implementation
+```
+
+### Directory Setup
+```bash
+# Create results directory if it doesn't exist
+mkdir -p results
+```
+
+## Deactivating Virtual Environment
+When you're done working with the project:
+```bash
+deactivate
+```
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+
+## Contact
+Jomael Ortiz Perez - jomael.ortizperez.cv@proton.me
+Project Link: https://github.com/0xjoma/academiaProjects/tree/main/final_project_deliverable_1
