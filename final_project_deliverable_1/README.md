@@ -155,5 +155,5 @@ deactivate
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contact
-Jomael Ortiz Perez - jomael.ortizperez.cv@proton.me
+Jomael Ortiz Perez - jomael.ortizperez.cv@proton.me\
 Project Link: https://github.com/0xjoma/academiaProjects/tree/main/final_project_deliverable_1
