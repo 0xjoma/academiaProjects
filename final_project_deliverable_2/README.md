@@ -21,8 +21,8 @@ This project implements the RSA public-key cryptography system in Python, provid
 │   ├── plaintext2.txt   # Decrypted output from Test Case 1
 │   ├── ciphertext2.txt  # Encrypted output from Test Case 2
 │   └── plaintext4.txt   # Decrypted output from Test Case 2
-└── selfAssesment/       # Contains self-assessment documentation
-    └── README_selfAssesment.md  # Detailed self-assessment against rubric
+└── selfAssessment/       # Contains self-assessment documentation
+    └── README_selfAssessment.md  # Detailed self-assessment against rubric
 ```
 
 ## Documentation

@@ -44,41 +44,52 @@ def modularExponent(a, e, m):
 # the encrypted text is written to the file named by the third parameter.
 # the string text in the plaintextFileName should be 62 characters or less
 def RSA_encrypt(plaintextFileName, publicKeyFileName, ciphertextFileName):
-    infile = open(plaintextFileName, "r")
-    outfile = open(ciphertextFileName, "w")
-    # Convert plaintext to an integer representation
-    strg = infile.read()
-    M = stringToInteger(strg)
+    # Open the plaintext file for reading
+    with open(plaintextFileName, "r") as infile:
+        # Read the plaintext from the input file
+        strg = infile.read()
+        # Convert plaintext to an integer representation
+        M = stringToInteger(strg)
 
-    keyfile = open(publicKeyFileName, "r")
-    n = int(keyfile.readline().strip(), 16)
-    e = int(keyfile.readline().strip(), 16)
-    keyfile.close()
+    # Open the public key file for reading
+    with open(publicKeyFileName, "r") as keyfile:
+        # Read modulus n and exponent e
+        n = int(keyfile.readline().strip(), 16)
+        e = int(keyfile.readline().strip(), 16)
 
+    # Perform encryption
     C = encrypt(n, e, M)
-    outfile.write(str(C))
-    infile.close()
-    outfile.close()
+
+    # Open the ciphertext file for writing
+    with open(ciphertextFileName, "w") as outfile:
+        # Write the ciphertext to the output file
+        outfile.write(str(C))
+
     return
 
 
 # decrypts the text in the file named by the first parameter with the private key in the file named in the second parameter.
 # the decrypted text is written to the file named by the third parameter.
 def RSA_decrypt(ciphertextFileName, privateKeyFileName, plaintextFileName):
-    infile = open(ciphertextFileName, "r")
-    outfile = open(plaintextFileName, "w")
-    # read cipher from file
-    C = int(infile.read())
+    # Open the ciphertext file for reading
+    with open(ciphertextFileName, "r") as infile:
+        # Read cipher from file
+        C = int(infile.read())
 
-    # read privateKeyFileName to extract n and d
-    keyfile = open(privateKeyFileName, "r")
-    n = int(keyfile.readline().strip(), 16)
-    d = int(keyfile.readline().strip(), 16)
+    # Open the private key file for reading
+    with open(privateKeyFileName, "r") as keyfile:
+        # Read modulus n and exponent d
+        n = int(keyfile.readline().strip(), 16)
+        d = int(keyfile.readline().strip(), 16)
 
+    # Perform decryption
     M = decrypt(n, d, C)
-    outfile.write(integerToString(M))
-    infile.close()
-    outfile.close()
+
+    # Open the plaintext file for writing
+    with open(plaintextFileName, "w") as outfile:
+        # Write the decrypted plaintext to the output file
+        outfile.write(integerToString(M))
+
     return
 
 
