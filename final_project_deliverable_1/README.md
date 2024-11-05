@@ -52,30 +52,7 @@ Uses plaintext1.txt and keySecret2.txt:
 - Generates ciphertext2.txt and plaintext3.txt
 
 ## Output Format
-The program provides detailed output for both encryption and decryption operations:
-
-### Encryption Results
-```
-DES Encryption Results
---------------------------
-Input:
-Plaintext Binary: [binary string]
-Key: [key used]
-Output:
-Ciphertext: [encrypted binary string]
-```
-
-### Decryption Results
-```
-DES Decryption Results:
---------------------------
-Input:
-Ciphertext: [encrypted binary string]
-Key: [key used]
-Output:
-Decrypted Binary: [decrypted binary string]
-Decrypted Hex: [hexadecimal representation]
-```
+The program provides an output file for both encryption and decryption operations under the `results` folder
 
 ## Implementation Details
 - Uses OneAndZeroes padding scheme for messages not exactly 64 bits
