@@ -1,0 +1,1 @@
+This is a longer test case that will require multiple 128-bit blocks to test the block splitting and chaining functionality of the MMO hash function.
