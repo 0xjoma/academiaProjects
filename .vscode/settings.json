@@ -1,6 +1,11 @@
 {
     "cSpell.words": [
         "Codebook",
-        "congruential"
+        "congruential",
+        "Cryptodome",
+        "Kpub",
+        "Ksecret",
+        "OAEP",
+        "PKCS"
     ]
 }
